@@ -1,47 +1,112 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial;
-  background: #121212;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-.player {
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  width: 320px;
+body {
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   text-align: center;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 8px;
-  cursor: pointer;
-  border-bottom: 1px solid #444;
-}
-
-li:hover {
-  background: #333;
-}
-
-.controls button {
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-#progress {
-  width: 100%;
-}
-
-.volume {
+.hero button {
+  padding: 10px 20px;
   margin-top: 10px;
+  background: #ff5733;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.plan {
+  background: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.plan button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #ff5733;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
